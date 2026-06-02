@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(to right,#0f172a,#1e293b);
+    color:white;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.todo-app{
+    width:550px;
+    background:#111827;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 0 25px rgba(0,0,0,0.5);
+}
+
+.todo-app h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#38bdf8;
+    font-size:40px;
+}
+
+.input-section{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.input-section input{
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    font-size:18px;
+    outline:none;
+}
+
+#addTaskBtn{
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#3b82f6;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#addTaskBtn:hover{
+    background:#2563eb;
+}
+
+#taskList{
+    margin-top:30px;
+    list-style:none;
+}
+
+.task-item{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.task-content{
+    flex:1;
+}
+
+.task-content h3{
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+.task-content p{
+    color:#cbd5e1;
+}
+
+.completed h3{
+    text-decoration:line-through;
+    color:#22c55e;
+}
+
+.task-buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.task-buttons button{
+    border:none;
+    padding:10px 15px;
+    border-radius:10px;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.complete-btn{
+    background:#22c55e;
+}
+
+.edit-btn{
+    background:#f59e0b;
+}
+
+.delete-btn{
+    background:#ef4444;
+}
+
+.task-buttons button:hover{
+    transform:scale(1.05);
+}
